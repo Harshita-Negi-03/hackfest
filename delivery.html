@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery   
+ Tracking</title>
+  <link rel="stylesheet" href="deliverystyle.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Delivery Tracking</h1>
+    <p>Enter your order ID:</p>
+    <input type="text" id="orderId" placeholder="Order ID">
+    <button id="trackButton">Track</button>
+
+    <div id="driverInfo" >
+      <h2>Driver Information</h2>
+      <p>Driver Name: <span id="driverName"></span></p>
+      <p>Driver Phone: <span id="driverPhone"></span></p>
+      
+      
+      <div><img src="https://th.bing.com/th/id/OIP.WgxodMa1VM0PwycbVGAflQHaE8?rs=1&pid=ImgDetMain" alt="" style="height: 200px; width: 200px;"></div>
+      <p>Driver Location: <span id="driverLocation"></span></p>
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places,marker,geolocation"></script>
+ 
+</body>
+</html>

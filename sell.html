@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your   
+ Food</title>
+    <link rel="stylesheet" href="sellstyle.css">
+</head>
+<body>
+    <h1>Sell Your Food</h1>
+
+    <form id="sellFoodForm">
+        <label for="foodName">Food Name:</label>
+        <input type="text" id="foodName" name="foodName" required>
+
+        <label for="foodDescription">Description:</label>
+        <textarea id="foodDescription" name="foodDescription" required></textarea>   
+
+
+        <label for="foodPrice">Price:</label>
+        <input type="number" id="foodPrice" name="foodPrice" step="0.01" required>
+
+        <label for="foodImage">Image:</label>
+        <input type="file" id="foodImage" name="foodImage" accept="image/*">
+
+        <button type="submit">List Your Food</button>
+    </form>
+</body>
+</html>
