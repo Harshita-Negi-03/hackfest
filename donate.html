@@ -5,42 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="home.css">
+    <style>
+        form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #3e8e41;
+
+}
+h1 {
+    text-align: center;
+}
+    </style>
 </head>
 <body>
-    <style>
-        .itm{
-            background-color: white;
-            display: grid;
-        }
-        .itm img{
-            margin-left: auto;
-            margin-right: auto;
-        }
-        p{
-            text-align: center; font-size: 30PX;color: black; margin-top: 50px;
-        }
-        a{
-            text-decoration: underline;
-        }
-        @media (max-width: 767px) {
-            .itm{
-                /* float: left; */
-                
-            }
-        }
-    </style>
-
-        <div class="itm" >
-
-            <!-- <p class="heading">We will reach soon</p> -->
-            <p>"Your donoate will be immediately collected and sent to needy people "</p>
-            <img src="https://media.istockphoto.com/vectors/food-donation-and-charity-vector-id1224414210?k=6&m=1224414210&s=170667a&w=0&h=q6jgt94AfEil4LAQIXygB90JMbEZcbwxgJbqy4NcUFw=" alt="" width="400" height="400"> 
-          
-            <!-- <p>Thanks for donating <a href="home.html"></a></p> -->
-          <p style="text-align: center;"><a href="index.html">Return to home page</a></p>
-          <p><a href="feedback.html"> give feed back </a></p>
-        </div>
-        <br>
+    <h1>donate Your Food</h1>
+    <form action="">
+        <label for="">Name</label>
+        <input type="text" required>
+        <label for="">phonenumber</label>
+        <input type="number"reqired>
+        <label for="">enter your address</label>
+        <textarea name="" id=""></textarea>
+        <label for="">enter amount of food</label>
+        <textarea name="" id="" cols="30"></textarea>
+        <label for="">describe food</label>
+        <textarea name="" id=""></textarea>
+        <label for="foodImage">Image:</label>
+        <input type="file" id="foodImage" name="foodImage" accept="image/*">
+        <button type="submit"><a href="donating.html">submit</a></button>
+    </form>
+        
 </body>
 </html>
